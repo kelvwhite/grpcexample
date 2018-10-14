@@ -1,0 +1,6 @@
+grpc:
+    port: 6570
+
+grpcsclient:
+  host: localhost
+  port: 6565

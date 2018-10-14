@@ -1,0 +1,12 @@
+package com.example.grpc.server;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class GrpcexampleApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(GrpcexampleApplication.class, args);
+	}
+}

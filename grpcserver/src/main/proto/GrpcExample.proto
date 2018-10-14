@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+package com.example.grpc.server;
+
+message Person {
+  string first_name = 1;
+  string last_name = 2;
+}
+
+message Greeting {
+  string message = 1;
+}
+
+message MapRequest {
+
+}
+
+message MapResponse {
+  map<string, int32> mapped_values = 1;
+}
+
+service GrpcExampleService {
+  rpc sayHello (Person) returns (Greeting);
+
+  rpc getMap(MapRequest) returns (MapResponse);
+}
